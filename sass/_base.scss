@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px, 10px/16px = 62.5%
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 75%; //1rem = 12px
+  }
+
+  @media only screen and (max-width: 900px) {
+    font-size: 56.25%; //1rem = 9px
+  }
+
+  @media only screen and (max-width: 700px) {
+    font-size: 40%; //1rem = 8px
+  }
+
+  @media only screen and (max-width: 500px) {
+    font-size: 37.5%; //1rem = 6px
+  }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 31.25%; //1rem = 5px
+  }
+
+  @media only screen and (max-width: 350px) {
+    font-size: 25%; //1rem = 4px
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/universe.png");
+}

@@ -1,0 +1,28 @@
+// background
+$background-sun: linear-gradient(90deg, #ff4500, #ffa500);
+$background-mercury: linear-gradient(180deg, #808080, #fff);
+$background-venus: linear-gradient(180deg, #beb2a6, #d8af88, #bbbebf);
+$background-earth: radial-gradient(#8195f1 0%, #4562bb 10%, #325bd3 20%);
+$background-mars: linear-gradient(to bottom, #ca9076, #a16352, #794a41);
+$background-jupiter: repeating-linear-gradient(
+  to bottom,
+  #776650 10%,
+  #928577 20%,
+  #71685d 30%,
+  #776650 50%
+);
+$background-saturn: linear-gradient(to bottom, #a5916f, #aa987b);
+$background-uranus: radial-gradient(#93a7a6 10px, #54666b);
+$background-neptune: radial-gradient(#586da0 10px, #6174a2);
+
+//SIZES
+// ref : https://solarsystem.nasa.gov/resources/686/solar-system-sizes/
+$size-sun: 10rem;
+$size-mercury-planet: 0.8rem;
+$size-venus-planet: 1.6rem;
+$size-earth-planet: 1.8rem;
+$size-mars-planet: 0.9rem;
+$size-jupiter-planet: 5rem;
+$size-saturn-planet: 3rem;
+$size-uranus-planet: 2.5rem;
+$size-neptune-planet: 2.3rem;

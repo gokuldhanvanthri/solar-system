@@ -1,0 +1,255 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (min-width: 1200px) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (max-width: 900px) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 700px) {
+    html {
+      font-size: 40%; } }
+  @media only screen and (max-width: 500px) {
+    html {
+      font-size: 37.5%; } }
+  @media only screen and (max-width: 400px) {
+    html {
+      font-size: 31.25%; } }
+  @media only screen and (max-width: 350px) {
+    html {
+      font-size: 25%; } }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/universe.png"); }
+
+@keyframes animate-rotate {
+  0% {
+    transform: rotateZ(0deg); }
+  100% {
+    transform: rotateZ(-360deg); } }
+
+.sun {
+  left: 50%;
+  top: 50%;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  border-radius: 50%;
+  animation-duration: 1s;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  animation-name: animate-rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  backface-visibility: hidden;
+  margin-top: -0.5rem;
+  margin-left: -0.3rem;
+  background: linear-gradient(90deg, #ff4500, #ffa500); }
+
+.mercury {
+  left: 50%;
+  top: 50%;
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  border-radius: 50%;
+  animation-duration: 2s;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  animation-name: animate-rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  backface-visibility: hidden;
+  margin-top: -3rem;
+  margin-left: -3rem; }
+  .mercury__planet {
+    position: absolute;
+    top: 30%;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    animation-name: animate-rotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    backface-visibility: hidden;
+    background-image: linear-gradient(180deg, #808080, #fff); }
+
+.venus {
+  left: 50%;
+  top: 50%;
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  border-radius: 50%;
+  animation-duration: 4s;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  animation-name: animate-rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  backface-visibility: hidden;
+  margin-top: -5.5rem;
+  margin-left: -5.5rem; }
+  .venus__planet {
+    position: absolute;
+    top: 30%;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #beb2a6, #d8af88, #bbbebf); }
+
+.earth {
+  left: 50%;
+  top: 50%;
+  width: 26rem;
+  height: 26rem;
+  position: absolute;
+  border-radius: 50%;
+  animation-duration: 4.5s;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  animation-name: animate-rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  backface-visibility: hidden;
+  margin-top: -8.5rem;
+  margin-left: -8.5rem; }
+  .earth__planet {
+    position: absolute;
+    top: 30%;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background: radial-gradient(#8195f1 0%, #4562bb 10%, #325bd3 20%); }
+
+.mars {
+  left: 50%;
+  top: 50%;
+  width: 32rem;
+  height: 32rem;
+  position: absolute;
+  border-radius: 50%;
+  animation-duration: 8s;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  animation-name: animate-rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  backface-visibility: hidden;
+  margin-top: -11.5rem;
+  margin-left: -11.5rem; }
+  .mars__planet {
+    position: absolute;
+    top: 37%;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #ca9076, #a16352, #794a41); }
+
+.jupiter {
+  left: 50%;
+  top: 50%;
+  width: 42rem;
+  height: 42rem;
+  position: absolute;
+  border-radius: 50%;
+  animation-duration: 45s;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  animation-name: animate-rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  backface-visibility: hidden;
+  margin-top: -16.5rem;
+  margin-left: -16.5rem; }
+  .jupiter__planet {
+    position: absolute;
+    top: 22%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: repeating-linear-gradient(to bottom, #776650 10%, #928577 20%, #71685d 30%, #776650 50%);
+    animation-name: animate-rotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    backface-visibility: hidden;
+    animation-duration: 20s; }
+
+.saturn {
+  left: 50%;
+  top: 50%;
+  width: 52rem;
+  height: 52rem;
+  position: absolute;
+  border-radius: 50%;
+  animation-duration: 60s;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  animation-name: animate-rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  backface-visibility: hidden;
+  margin-top: -21.5rem;
+  margin-left: -21.5rem; }
+  .saturn__planet {
+    position: absolute;
+    top: 30%;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #a5916f, #aa987b); }
+  .saturn__rings {
+    position: absolute;
+    left: -1rem;
+    top: 28%;
+    width: 5rem;
+    height: 5rem;
+    background: radial-gradient(transparent 55%, white);
+    border-radius: 50%; }
+
+.uranus {
+  left: 50%;
+  top: 50%;
+  width: 60rem;
+  height: 60rem;
+  position: absolute;
+  border-radius: 50%;
+  animation-duration: 75s;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  animation-name: animate-rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  backface-visibility: hidden;
+  margin-top: -25.5rem;
+  margin-left: -25.5rem; }
+  .uranus__planet {
+    position: absolute;
+    top: 32%;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: radial-gradient(#93a7a6 10px, #54666b); }
+
+.neptune {
+  left: 50%;
+  top: 50%;
+  width: 67rem;
+  height: 67rem;
+  position: absolute;
+  border-radius: 50%;
+  animation-duration: 90s;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  animation-name: animate-rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  backface-visibility: hidden;
+  margin-top: -29rem;
+  margin-left: -29rem; }
+  .neptune__planet {
+    position: absolute;
+    top: 34%;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    background: radial-gradient(#586da0 10px, #6174a2); }
